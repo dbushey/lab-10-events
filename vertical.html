@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="sketch" width="800" height="600">
+	</canvas>
+	<script>
+	document.addEventListener('DOMContentLoaded', main);
+
+function main() {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+
+	var x = 0;
+	var y = 0;
+	var size = 20;
+
+
+	for(var i=0; i<=4; i++){
+		//return size = 20;
+		//return y = i * 30;
+		//return x = 100;
+		context.fillstyle = "#FFCCFF";
+		context.fillRect(100, (i * 30), 20, 20);
+	}
+}
+
+	</script>
+
+</body>
+</html>
